@@ -67,9 +67,9 @@ function Note() {
     return (
         <div className="bg-dark">
             <div className={lineClass}>
-                <h4>Note: </h4>
-                <div className="nav-link">{noteText} </div>
-                <div> <button className="bg-light" onClick={searchNote}>Смотреть еще один Note</button></div>
+                <h4 className="h4 btn">Note: </h4>
+                <div className="nav-link center">{noteText} </div>
+                <div> <button className="bg-light btn" onClick={searchNote}>Смотреть еще один Note</button></div>
                 
             </div>
             <div className={errorClass}>
@@ -80,7 +80,7 @@ function Note() {
                     <form className="row g-3" action="" onSubmit={getNote}>
                     <label htmlFor="floatingTextarea2" >Введите hash заметки</label>
                     <input type="text" name="url" id="url" className="form-control" />
-                    <button type="submit" className="btn btn primary">Search Note</button>
+                    <button type="submit" className="btn btn primary btn-light ">Search Note</button>
                         </form>
                 </div>
             </div>

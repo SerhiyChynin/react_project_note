@@ -47,6 +47,7 @@ ul, li {
 }
 .nav-link {
     color: #f1f1f1;
+    margin-bottom: 10px;
 }
 .nav-link-focus,
 .nav-link:hover {
@@ -57,6 +58,59 @@ ul, li {
 .liteNote {
     color: #f1f1f1;
 }
-.btn-primary {
-color:  white;
+.btn {
+    margin-top: 10px;
+    margin-left: 200px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(33, 37, 41);
+}
+.btn-light{
+    background-color: #f1f1f1;
+    max-width: 200px;
+    margin: 22px auto;
+    margin-bottom: 10px;
+    color: rgb(33, 37, 41);
+}
+.form-control-lg{
+    margin-left: 10px;
+}
+h3 {
+    margin-left: 200px;
+    padding-top: 40px;
+    margin-bottom: 20px;
+}
+.center {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 30px;
+}
+.bg-light {
+    display:inline-block;
+    text-align: center;
+    margin: 0 auto;
+    margin-left: 44%;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    color:black;
+    font-size: 16px;
+    font-weight: 600;
+
+}
+.form-control {
+    width: 80%;
+    margin-left: 200px;
+    margin-right: 100px;
+}
+
+.h4 {
+    display: block;
+    margin: 0 auto;
+    width: 70px;
+    background-color: #f1f1f1;
+    color: rgb(33, 37, 41);
+    text-align: start;
+    font-size: 16px;
+    font-weight: 600;
+    padding-top: 0;
+    padding-bottom: 0;
 }
