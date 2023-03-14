@@ -65,22 +65,24 @@ function Note() {
     }
     
     return (
-        <div>
+        <div className="bg-dark">
             <div className={lineClass}>
                 <h4>Note: </h4>
-                <div>{noteText} </div>
-                <div> <button onClick={searchNote}>Смотреть еще один Note</button></div>
+                <div className="nav-link">{noteText} </div>
+                <div> <button className="bg-light" onClick={searchNote}>Смотреть еще один Note</button></div>
                 
             </div>
             <div className={errorClass}>
                 <p >Произошла ошибка. Note не найден!</p>
             </div>
-            <div className={formClass}>
-                <form action="" onSubmit={getNote}>
-                <label htmlFor="">Введите hash заметки</label>
-                <input type="text" name="url" id="url" className="form-control" />
-                <button type="submit" className="btn btn primary">Search Note</button>
-                    </form>
+            <div className="form-floating">
+                <div className={formClass}>
+                    <form className="row g-3" action="" onSubmit={getNote}>
+                    <label htmlFor="floatingTextarea2" >Введите hash заметки</label>
+                    <input type="text" name="url" id="url" className="form-control" />
+                    <button type="submit" className="btn btn primary">Search Note</button>
+                        </form>
+                </div>
             </div>
         </div>
     );

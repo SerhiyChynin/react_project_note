@@ -39,11 +39,11 @@ function Create() {
         sendData({'note': note})
     }
     return (
-        <div>
+        <div  className="row g-3">
             <form onSubmit={loadDataFromForm} className={formClass}>
-                <label htmlFor="">Введите заметку</label>
-                <textarea name="note" id="note" defaultValue="Test"></textarea>
-                <button type='submit'>Create</button>
+                <label htmlFor="floatingTextarea2"><h3>Введите заметку</h3></label>
+                <textarea   className='form-control  form-control-lg' name="note" id="note" defaultValue=""></textarea>
+                <button className="btn btn primary mb-3" type='submit'>Create</button>
             </form>
             <div className={lineClass}>
                 <div>{url}</div>
