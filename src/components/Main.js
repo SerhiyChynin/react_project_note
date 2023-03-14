@@ -1,7 +1,12 @@
 function Main() {
     return (
         <div>
-            <h1> </h1>
+            <div>
+                <a href="/create">Create Note</a>
+            </div>
+            <div>
+            <a href="/note">Note</a>
+            </div>
         </div>
     );
 }

@@ -9,7 +9,7 @@ import env from '../env.json';
 
 
 function Note() {
-    let { noteURL } = useParams()// notUrl попадет прилетевшая чатсь 01oml96ux6g5tri80zav7xw6
+    let { noteURL } = useParams()// noteURL попадет прилетевшая чатсь 01oml96ux6g5tri80zav7xw6
     const [noteText, setNoteText] = useState('');    
     const [lineClass, setLineClass] = useState('hide');    
     const [formClass, setFormClass] = useState('hide');
@@ -59,15 +59,21 @@ function Note() {
         noteURL = url;
         window.location.href = env.url + '/' + url;
     }
+
+    function searchNote(event) {
+        window.location.href = env.url;
+    }
     
     return (
         <div>
             <div className={lineClass}>
                 <h4>Note: </h4>
                 <div>{noteText} </div>
+                <div> <button onClick={searchNote}>Смотреть еще один Note</button></div>
+                
             </div>
             <div className={errorClass}>
-                <p>Произошла ошибка. Note не найден!</p>
+                <p >Произошла ошибка. Note не найден!</p>
             </div>
             <div className={formClass}>
                 <form action="" onSubmit={getNote}>
