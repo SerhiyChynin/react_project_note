@@ -1,12 +1,12 @@
 import { NavLink } from "react-router-dom";
 function Main() {
     return (
-        <div className="main_elem navbar-dark bg-dark ">
+        <div className="  main_elem navbar-dark bg-dark ">
             <div>
                 <NavLink className="nav-link link-bottom" to="/create">Create Note </NavLink>
             </div>
             <div>
-                <NavLink className="nav-link" to="/note">Note </NavLink>
+                <NavLink className="nav-link " to="/note">Note </NavLink>
 
             </div>
         </div>

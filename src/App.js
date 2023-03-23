@@ -10,11 +10,11 @@ import Error from './components/Error';
 function App() {
   return (
     <div className="main">
-      <Router>
+      <Router >
         <Header></Header>
-        <Routes>
-
-          <Route exact path="/" element={<Main/>}/>
+        <Routes >
+      
+          <Route exact path="/" element={<Main />}/>
           <Route path="/about" element={<About/>}/>
           <Route path="/create" element={<Create/>}/>
           <Route exact path="/note/" element={<Note/>}/>
@@ -22,8 +22,8 @@ function App() {
           <Route exact path="*" element={<Error/>}/>
 
         </Routes>
-      </Router>
       <Footer></Footer>
+      </Router>
     </div>
   );
 }

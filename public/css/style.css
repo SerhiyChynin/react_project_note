@@ -3,12 +3,18 @@ html, body, #root {
     background-color: #e9e9e941;
 }
 #root {
-    display: flex;
-    flex-direction: column;
 }
 .main {
-    flex: 1 0 auto;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    
 }
+.m {
+    flex: 1 1 auto;
+
+}
+
 .hide {
     display: none;
 }
@@ -92,6 +98,11 @@ h3 {
     text-align: center;
     font-size: 30px;
 }
+.center_2 {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 16px;
+}
 .bg-light {
     display:inline-block;
     text-align: center;
@@ -113,14 +124,32 @@ h3 {
 .h4 {
     display: block;
     margin: 0 auto;
-    width: 212px;
-    background-color: #f1f1f1;
-    color: rgb(33, 37, 41);
+    max-width: 300px;
+    background-color: #b7b5b56b;
+    color: rgb(240, 241, 242);
     text-align: start;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 400;
     padding-top: 0;
     padding-bottom: 0;
     margin-bottom: 20px;
     
+}
+.text {
+    font-size: 24px;
+    font-weight: 600;
+    padding-left: 200px;
+    padding-top: 30px;
+}
+.footer {
+display: flex;
+justify-content: space-between;
+}
+
+.h6{
+    /* text-align: center; */
+    color: #f1f1f1;
+    font-size: 12px;
+    font-weight: 300;
+    padding-top: 5px;
 }

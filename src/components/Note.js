@@ -5,6 +5,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import env from '../env.json';
+import { NavLink } from "react-router-dom";
 
 
 
@@ -65,15 +66,20 @@ function Note() {
     }
     
     return (
-        <div className="bg-dark">
+        <div className="bg-dark ">
             <div className={lineClass}>
-                <h4 className="h4 btn">Note: </h4>
-                <div className="nav-link center">{noteText} </div>
+                <h4 className="h4 btn">Note: {noteURL} </h4>
+                <div className="nav-link center">{noteText} <br /> <div className="center_2" >После показа, заметка будет удалена. Скопируйте заметку!</div>  </div>
                 <div> <button className="bg-light btn" onClick={searchNote}>Смотреть еще один Note</button></div>
                 
             </div>
             <div className={errorClass}>
-                <p >Произошла ошибка. Note не найден!</p>
+                <p className="btn ">404 - Произошла ошибка. Note не найден!</p>
+            <div>
+                <NavLink className="nav-link link-bottom center" to="/create">Create Note </NavLink>
+            </div>
+                
+                
             </div>
             <div className="form-floating">
                 <div className={formClass}>

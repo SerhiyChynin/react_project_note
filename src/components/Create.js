@@ -46,8 +46,8 @@ function Create() {
                 <button className="btn btn primary mb-3" type='submit'>Create</button>
             </form>
             <div className={lineClass}>
-                <div>{url}</div>
-                <div><button onClick={()=>{window.location.reload()}}>Add new Note</button></div>   
+                <div className='text'>{url}</div>
+                <div><button className='btn' onClick={()=>{window.location.reload()}}>Add new Note</button></div>   
             </div>      
         </div>                                           //window.location.reload() - метод перезагружает страницу
     );
