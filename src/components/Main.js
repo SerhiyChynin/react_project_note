@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 function Main() {
     return (
-        <div className="  main_elem navbar-dark bg-dark ">
+        <div className=" flex main_elem navbar-dark bg-dark ">
             <div>
                 <NavLink className="nav-link link-bottom" to="/create">Create Note </NavLink>
             </div>

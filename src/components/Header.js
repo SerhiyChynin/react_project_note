@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 function Header() {
     return (
-        <div className="header,  bg-dark">
+        <div className="header,  bg-dark ">
         <h1 className="liteNote">Lite Note</h1>
             <nav className=" navbar bg-dark navbar-expand-lg " >
                 <div className="container">

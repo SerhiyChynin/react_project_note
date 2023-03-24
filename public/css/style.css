@@ -10,11 +10,10 @@ html, body, #root {
 }
 
 .main {
-    margin: auto;
+    /* margin: auto; */
     display: flex;
     flex-direction: column;
     min-height: 100%;
-    flex: 1 1 auto;
 }
 
 
@@ -33,6 +32,10 @@ html, body, #root {
 .nav{
     display: flex;
 }
+.flex {
+    flex: 1 1 auto;
+}
+
 .main_elem {
     display: flex;
     justify-content: space-around;
@@ -84,10 +87,14 @@ ul, li {
     text-shadow:#f1f1f1;
 }
 .btn {
+    display: block;
     margin: 0 auto;
     margin-top: 20px;
     color: rgb(255, 255, 255);
     background-color: rgb(33, 37, 41);
+}
+.btn:hover{
+    color: #697993;
 }
  button, .primary, .mb-3 {
     display: block;
@@ -166,6 +173,8 @@ h3 {
     margin: auto 0;
     display: flex;
     justify-content: space-between;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 .h6{

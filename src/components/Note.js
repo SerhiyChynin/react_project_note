@@ -66,7 +66,7 @@ function Note() {
     }
     
     return (
-        <div className="bg-dark ">
+        <div className="bg-dark flex">
             <div className={lineClass}>
                 <h4 className="h4 btn">Note: {noteURL} </h4>
                 <div className="nav-link center">{noteText} <br /> <div className="center_2" >После показа, заметка будет удалена. Скопируйте заметку!</div>  </div>
