@@ -21,8 +21,41 @@ html, body, #root {
     display: none;
 }
 
+.navbar-toggler {
+    display: block;
+    margin-right: 16%;
+    background-color: #f1f1f1;
+    font-size: 10px;
+    position: relative;
+    top: -65px;
+    padding: -12px 0 -12px 0;
+}
+@media (max-width: 500px) {
+    .navbar-toggler{
+        box-sizing: border-box;
+
+        margin: 80px auto;
+        
+        margin-bottom: 0;
+        
+    }
+        .liteNote {
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 0px;
+            font-size: 40px;
+            color: #f1f1f1;
+        }
+
+}
+.navbar {
+    margin-left: 10%;
+
+}
+
 
 .header {
+    margin-left: 10%;
     padding-top: 20px;
     background-color: #697993; 
     color: #f1f1f1;
@@ -76,6 +109,9 @@ ul, li {
     color: rgb(171, 202, 238);
 }
 
+.note {
+    margin-right: 80px;
+}
 
 
 .liteNote {

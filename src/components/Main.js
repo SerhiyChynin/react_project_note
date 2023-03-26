@@ -5,8 +5,8 @@ function Main() {
             <div>
                 <NavLink className="nav-link link-bottom" to="/create">Create Note </NavLink>
             </div>
-            <div>
-                <NavLink className="nav-link " to="/note">Note </NavLink>
+            <div className="note">
+                <NavLink className="nav-link  " to="/note">Note </NavLink>
 
             </div>
         </div>
