@@ -15,15 +15,16 @@ function Note() {
     const [lineClass, setLineClass] = useState('hide');    
     const [formClass, setFormClass] = useState('hide');
     const [errorClass, setErrorClass] = useState('hide');
-
+    
     useEffect(() => {
         if (noteURL !== undefined) {
+            setFormClass('hide');
             fetch(env.urlBackend, {
                 method: 'POST',
                 headers: {
                     'Content-type': 'application/x-www-form-urlencoded'
                 },
-                body: JSON.stringify({ "url": noteURL })
+                body: JSON.stringify({ "url": noteURL }),
             })
                 .then(response => response.json())
                 .then(response => {
@@ -32,24 +33,22 @@ function Note() {
                         setLineClass('');
                         setFormClass('hide');
                         setErrorClass('hide');
-
                     }
                     else if (!response.result) {
                         setLineClass('hide');
                         setFormClass('hide');
                         setErrorClass('');
                     }
-                }
-                )
+                });
         }
         else {
                 setLineClass('hide');
                 setFormClass('');
                 setErrorClass('hide');
+            }
+        }, []);
 
-        }
-    }, []);
-    function getNote(event) {
+function getNote(event) {
         event.preventDefault();
         let url = event.target.elements.url.value;
         url = url.trim();
@@ -69,7 +68,8 @@ function Note() {
         <div className="bg-dark flex">
             <div className={lineClass}>
                 <h4 className="h4 ">Note: {noteURL} </h4>
-                <div className="nav-link center">{noteText} <br /> <div className="center_2" >После показа, заметка будет удалена. Скопируйте заметку!</div>  </div>
+                <div className="nav-link center">{noteText} <br />
+                 <div className="center_2 " >После показа, заметка будет удалена. Скопируйте заметку!</div>  </div>
                 <div> <button className="bg-light btn" onClick={searchNote}>Смотреть еще один Note</button></div>
                 
             </div>

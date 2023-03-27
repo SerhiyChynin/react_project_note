@@ -1,7 +1,7 @@
 function Error() {
     return (
-        <div>
-            <h1 className="btn-primary">404</h1>
+        <div className="flex">
+            <h1 className="btn-primary h1">404 - Error</h1>
         </div>
     );
 }

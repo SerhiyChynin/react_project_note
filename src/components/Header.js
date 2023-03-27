@@ -4,7 +4,7 @@ function Header() {
     return (
         <div className="header,  bg-dark ">
          <h1 className="liteNote"><NavLink className="nav-link " to="/">LiteNote</NavLink></h1>
-            <nav className=" navbar bg-dark navbar-expand-lg  " >
+            <nav className=" navbar bg-dark navbar-expand-lg" >
 
                 <div className="container">
                     <button className="navbar-toggler" type="button" data-toggle="collapse"

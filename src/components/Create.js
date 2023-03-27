@@ -7,6 +7,7 @@ function Create() {
     const [url, setUrl] = useState('');
     const [lineClass, setLineClass] = useState('hide'); //скрываем
     const [formClass, setFormClass] = useState(''); 
+
     let sendData = (obj) => {
         setFormClass('hide');
         setLineClass('');
@@ -21,10 +22,10 @@ function Create() {
             .then(response => {
                 console.log(response);
                 if (response.result) {                      // .result - проверяет либо true либо false. Создалась заметка или нет
-                    setUrl(env.url+ '/' + response.url)        //response.url - backend ответ сервера, хеш в поле url
-                    console.log(url);
+                    setUrl(env.url + '/' + response.url)        //response.url - backend ответ сервера, хеш в поле url
+                    // console.log(url);
                 }
-        })
+            });
     }
 
     function loadDataFromForm(event) {
@@ -36,7 +37,7 @@ function Create() {
             alert('Заполните поля');
             return false;
         }
-        sendData({'note': note})
+        sendData({ 'note': note });
     }
     return (
         <div  className="g-3 flex">

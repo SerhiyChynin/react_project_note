@@ -125,8 +125,13 @@ h3 {
 }
 .center_2 {
     margin: 0 auto;
+    margin-top: 20px;
     text-align: center;
     font-size: 16px;
+    background-color: #6d6d6d6b;
+    max-width: 440px;
+    border-radius: .375rem;
+        
 }
 label {
     display: block;
@@ -215,14 +220,33 @@ label {
     padding-top: 5px;
 }
 
-
+@media (max-width: 355px) {
+        .center {
+            font-size: 22px;
+        }
+                }
 @media (max-width: 500px) {
+    .navbar-toggler {
+
+        margin: 14.5px auto;
+        margin-left: 75%;
+        margin-bottom: 0;
+    }
+           .liteNote {
+               padding-left: 0%;
+               text-align: center;
+               margin-top: 10px;
+               margin-bottom: 0px;
+               font-size: 44px;
+               font-weight: 700;
+               color: #f1f1f1;
+           }
+@media (max-width: 370px) {
     .navbar-toggler {
 
         margin: 70px auto;
         margin-left: 75%;
         margin-bottom: 0;
-
     }
 
     .liteNote {
