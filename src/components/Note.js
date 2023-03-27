@@ -68,7 +68,7 @@ function Note() {
     return (
         <div className="bg-dark flex">
             <div className={lineClass}>
-                <h4 className="h4 btn">Note: {noteURL} </h4>
+                <h4 className="h4 ">Note: {noteURL} </h4>
                 <div className="nav-link center">{noteText} <br /> <div className="center_2" >После показа, заметка будет удалена. Скопируйте заметку!</div>  </div>
                 <div> <button className="bg-light btn" onClick={searchNote}>Смотреть еще один Note</button></div>
                 
@@ -83,7 +83,7 @@ function Note() {
             </div>
             <div className="form-floating">
                 <div className={formClass}>
-                    <form className="row g-3" action="" onSubmit={getNote}>
+                    <form className="g-3" action="" onSubmit={getNote}>
                     <label htmlFor="floatingTextarea2" >Введите hash заметки</label>
                     <input type="text" name="url" id="url" className="form-control" />
                     <button type="submit" className="btn btn primary btn-light ">Search Note</button>

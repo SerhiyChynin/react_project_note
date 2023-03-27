@@ -39,7 +39,7 @@ function Create() {
         sendData({'note': note})
     }
     return (
-        <div  className="row g-3 flex">
+        <div  className="g-3 flex">
             <form onSubmit={loadDataFromForm} className={formClass}>
                 <label htmlFor="floatingTextarea2"><h3>Введите заметку</h3></label>
                 <textarea   className='form-control  form-control-lg' name="note" id="note" defaultValue=""></textarea>
