@@ -89,7 +89,7 @@ p{
 }
 .btn {
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 20px;
     margin-top: 20px;
     color: rgb(255, 255, 255);
     background-color: rgb(24, 27, 30);
@@ -124,7 +124,7 @@ h3 {
     font-size: 30px;
 }
 .center_2 {
-    margin: 0 auto;
+    margin: 0 auto ;
     margin-top: 20px;
     text-align: center;
     font-size: 16px;
@@ -172,11 +172,15 @@ label {
 .h4:hover {
     color:#697993;
 }
+.g-3 {
+
+}
 
 .text {
-    font-size: 24px;
-    font-weight: 600;
-    padding-left: 200px;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
     padding-top: 30px;
 }
 .text-1 {
@@ -225,13 +229,17 @@ label {
             font-size: 22px;
         }
                 }
-@media (max-width: 500px) {
+@media (max-width: 510px) {
     .navbar-toggler {
 
         margin: 14.5px auto;
         margin-left: 75%;
         margin-bottom: 0;
     }
+        .note {
+            margin-right: 0px;
+        }
+
            .liteNote {
                padding-left: 0%;
                text-align: center;
@@ -241,6 +249,15 @@ label {
                font-weight: 700;
                color: #f1f1f1;
            }
+                           .text {
+                               display: block;
+                               font-size: 16px;
+                               font-weight: 200;
+                               text-align: center;
+                               padding-top: 30px;
+                           }
+                   
+        }
 @media (max-width: 370px) {
     .navbar-toggler {
 
@@ -270,5 +287,13 @@ label {
         .note {
             margin: 0 auto;
         }
+
+                .text {
+                    display: block;
+                    font-size: 10px;
+                    font-weight: 200;
+                    text-align: center;
+                    padding-top: 30px;
+                }
 
 }
